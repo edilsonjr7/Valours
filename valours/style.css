@@ -357,3 +357,22 @@ a {
   cursor: pointer;
   text-decoration: none;
 }/*# sourceMappingURL=style.css.map */
+
+
+.logo-img {
+  width: 150px;
+  height: auto;
+  object-fit: contain;
+
+  /* aparência mais premium */
+  filter: brightness(1.1) contrast(1.1) drop-shadow(0 0 8px rgba(255,255,255,0.08));
+
+  /* suavidade */
+  transition: all 0.3s ease;
+}
+
+/* efeito elegante ao passar o mouse */
+.logo-img:hover {
+  transform: scale(1.05);
+  filter: brightness(1.2) contrast(1.2) drop-shadow(0 0 12px rgba(255,255,255,0.15));
+}
