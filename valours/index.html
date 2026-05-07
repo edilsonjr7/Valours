@@ -4,149 +4,365 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Valours Gamers | Elite Experience</title>
-  
+
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
-  <link href="https://fonts.googleapis.com/css2?family=Sora:wght@300;400;600&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Sora:wght@300;400;600;700&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" />
-  
   <link rel="stylesheet" href="style.css" />
 </head>
 <body>
 
+  <!-- CURSOR PERSONALIZADO -->
+  <div class="cursor"></div>
+  <div class="cursor-follower"></div>
+
+  <!-- HERO SECTION -->
   <div class="bg-home">
+
+    <!-- PARTÍCULAS DE FUNDO -->
+    <canvas id="particles-canvas"></canvas>
+
+    <!-- OVERLAY GRADE -->
+    <div class="grid-overlay"></div>
+
     <header class="container">
       <nav class="header-content">
+
         <div class="header-icons" data-aos="fade-down">
-          <a href="terror .html"><i class="fa-brands fa-instagram"></i>Terror</a>
-          <a href="#"><i class="fa-brands fa-facebook"></i></a>
-          <a href="#"><i class="fa-brands fa-tiktok"></i></a>
+          <a href="https://www.instagram.com/accounts/login/" class="nav-link">
+            <i class="fa-brands fa-instagram"></i>
+            
+          </a>
+          <a href="https://www.facebook.com/?_rdr" class="nav-link"><i class="fa-brands fa-facebook"></i></a>
+          <a href="https://www.tiktok.com/login" class="nav-link"><i class="fa-brands fa-tiktok"></i></a>
         </div>
 
-        <div class="header-logo" data-aos="zoom-in">
-          <img src="assets/logoFundo.png" alt="Logo Valours" class="logo-img" />
+        <div class="header-logo" data-aos="zoom-in" data-aos-delay="200">
+          <div class="logo-wrapper">
+            <img src="assets/logoFundo.png" alt="Logo Valours" class="logo-img" />
+            <div class="logo-glow"></div>
+          </div>
         </div>
 
         <div data-aos="fade-down">
           <a class="header-button" href="#">AGENDAR HORÁRIO</a>
         </div>
       </nav>
-
-      <main class="hero container" data-aos="fade-up" data-aos-delay="400">
-        <h1>A SUA IDENTIDADE É O SEU MAIOR PODER. DOMINE O JOGO COM O LUXO QUE VOCÊ MERECE.</h1>
-        <p>Horário de funcionamento: 09:00 às 19:00</p>
-        <a href="https://api.whatsapp.com/send?phone=5561999639758" class="button-contact">AGENDAR AGORA</a>
-      </main>
     </header>
+
+    <main class="hero container">
+      <div class="hero-eyebrow" data-aos="fade-up" data-aos-delay="300">
+        <span class="dot"></span> ELITE GAMING EXPERIENCE
+      </div>
+      <h1 class="hero-title" data-aos="fade-up" data-aos-delay="500">
+        <span class="line-1">DOMINE</span>
+        <span class="line-2">O JOGO</span>
+        <span class="line-3">COM <em>LUXO</em></span>
+      </h1>
+      <p class="hero-sub" data-aos="fade-up" data-aos-delay="700">
+        Horário de funcionamento: <strong>09:00 às 19:00</strong>
+      </p>
+      <div data-aos="fade-up" data-aos-delay="900">
+        <a href="https://api.whatsapp.com/send?phone=5561999639758" class="button-contact">
+          <span>AGENDAR AGORA</span>
+          <i class="fa-solid fa-arrow-right"></i>
+        </a>
+      </div>
+
+      <!-- BADGE FLUTUANTE -->
+      <div class="hero-badge" data-aos="zoom-in" data-aos-delay="1100">
+        <span class="badge-inner">⚡ ELITE</span>
+      </div>
+    </main>
+
+    <!-- SCROLL INDICATOR -->
+    <div class="scroll-indicator">
+      <div class="scroll-line"></div>
+      <span>SCROLL</span>
+    </div>
   </div>
 
-  <section class="about-premium container" data-aos="fade-up">
-    <div class="about-glass">
-        <h2>Sobre a <span class="text-gradient">Valours</span></h2>
-        <p>Na Valours Gamers, acreditamos que a vida não é apenas sobre o jogo que você joga, mas sobre como você se apresenta para o mundo. Nascemos na interseção entre a performance de elite e a estética impecável.
-
-Curadoria de Elite: Assim como um setup de última geração, cada detalhe da nossa experiência é calibrado para oferecer o máximo de sofisticação.
-
-Aura de Poder: Não entregamos apenas serviços; construímos a armadura visual de quem sabe que a primeira impressão é o boss final.
-
-Legado e Estilo: Nossa missão é garantir que você esteja sempre um nível acima, unindo a paixão pelos games com o padrão de luxo que o seu legado exige.</p>
-        </div>
-</section>>
-
-  <section class="services container">
-    <div class="services-header" data-aos="fade-right">
-      <h2>DESTAQUES DO MÊS</h2>
-      <p>Confira os títulos mais cobiçados em nossa curadoria exclusiva.</p>
+  <!-- STATS BAR -->
+  <section class="stats-bar">
+    <div class="container stats-inner">
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="100">
+        <span class="stat-num">500+</span>
+        <span class="stat-label">Títulos</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="200">
+        <span class="stat-num">4K</span>
+        <span class="stat-label">Resolução</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="300">
+        <span class="stat-num">0ms</span>
+        <span class="stat-label">Lag</span>
+      </div>
+      <div class="stat-divider"></div>
+      <div class="stat-item" data-aos="fade-up" data-aos-delay="400">
+        <span class="stat-num">#1</span>
+        <span class="stat-label">Elite</span>
+      </div>
     </div>
+  </section>
 
-    <div class="haircuts-grid">
-      <div class="haircut-card" data-aos="fade-up" data-aos-delay="150">
-        <div class="card-image">
-          <img src="assets/rdr2.jpg" alt="Red Dead Redemption 2" />
-        </div>
-        <div class="card-info">
-          <strong>Red Dead Redemption 2</strong>
-          <button>R$ 299,00</button>
-        </div>
+  <!-- SOBRE -->
+  <section class="about-premium container" data-aos="fade-up">
+    <div class="about-layout">
+      <div class="about-tag-col">
+        <div class="about-tag">SOBRE NÓS</div>
+        <div class="about-line"></div>
       </div>
-
-      <div class="haircut-card" data-aos="fade-up" data-aos-delay="250">
-        <div class="card-image">
-          <img src="assets/ghost.jpg" alt="Ghost of Tsushima" />
-        </div>
-        <div class="card-info">
-          <strong>Ghost of Tsushima</strong>
-          <button>R$ 249,00</button>
-        </div>
-      </div>
-
-      <div class="haircut-card" data-aos="fade-up" data-aos-delay="400">
-        <div class="card-image">
-          <img src="assets/needSpeed.jpg" alt="Tekken" />
-        </div>
-
-        <div class="card-info">
-          <strong>Need for Speed</strong>
-          <button>R$ 319,00</button>
-        </div>
-      </div>
-
-      <div class="haircut-card" data-aos="fade-up" data-aos-delay="400">
-        <div class="card-image">
-          <img src="assets/batman.jpg" alt="Tekken" />
-        </div>
-        <div class="card-info">
-          <strong>Batmanc Arkham Knight</strong>
-          <button>R$ 259,00</button>
-        </div>
-      </div>
-
-      <div class="haircut-card" data-aos="fade-up" data-aos-delay="400">
-        <div class="card-image">
-          <img src="assets/resident2.jpg" alt="Tekken" />
-        </div>
-        <div class="card-info">
-          <strong>Resident Evil</strong>
-          <button>R$ 479,00</button>
-        </div>
-      </div>
-
-      <div class="haircut-card" data-aos="fade-up" data-aos-delay="400">
-        <div class="card-image">
-          <img src="assets/diablo.jpg" alt="Tekken" />
-        </div>
-        <div class="card-info">
-          <strong>Diablo</strong>
-          <button>R$ 379,00</button>
+      <div class="about-glass">
+        <h2>Sobre a <span class="text-gradient">Valours</span></h2>
+        <p class="about-text">
+          Na Valours Gamers, acreditamos que a vida não é apenas sobre o jogo que você joga, mas sobre como você se apresenta para o mundo. Nascemos na interseção entre a <strong>performance de elite</strong> e a estética impecável.
+        </p>
+        <div class="about-pillars">
+          <div class="pillar">
+            <div class="pillar-icon">🎮</div>
+            <h3>Curadoria de Elite</h3>
+            <p>Assim como um setup de última geração, cada detalhe da nossa experiência é calibrado para oferecer o máximo de sofisticação.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">⚔️</div>
+            <h3>Aura de Poder</h3>
+            <p>Não entregamos apenas serviços; construímos a armadura visual de quem sabe que a primeira impressão é o boss final.</p>
+          </div>
+          <div class="pillar">
+            <div class="pillar-icon">👑</div>
+            <h3>Legado e Estilo</h3>
+            <p>Nossa missão é garantir que você esteja sempre um nível acima, unindo a paixão pelos games com o padrão de luxo.</p>
+          </div>
         </div>
       </div>
     </div>
   </section>
 
-  <div class="map-title">
-    <h2>Venha conhecer</h2>
-  </div>
-  <iframe
-    width="100%"
-    src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15357.265747443144!2d-47.91299!3d-15.794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1715000000000" 
-    height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+  <!-- DESTAQUES DO MÊS -->
+  <section class="services container">
+    <div class="services-header" data-aos="fade-right">
+      <div class="section-tag">CURADORIA EXCLUSIVA</div>
+      <h2>DESTAQUES <span class="text-gradient">DO MÊS</span></h2>
+      <p>Os títulos mais cobiçados selecionados para a sua experiência.</p>
+    </div>
 
+    <div class="haircuts-grid">
+
+      <div class="haircut-card" data-aos="fade-up" data-aos-delay="100">
+        <div class="card-image">
+          <img src="assets/rdr2.jpg" alt="Red Dead Redemption 2" />
+          <div class="card-overlay">
+            <span class="card-genre">AVENTURA ÉPICA</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <div class="card-text">
+            <strong>Red Dead Redemption 2</strong>
+            <span class="card-sub">Rockstar Games</span>
+          </div>
+          <button class="price-btn">R$ 299</button>
+        </div>
+      </div>
+
+      <div class="haircut-card" data-aos="fade-up" data-aos-delay="200">
+        <div class="card-image">
+          <img src="assets/ghost.jpg" alt="Ghost of Tsushima" />
+          <div class="card-overlay">
+            <span class="card-genre">SAMURAI OPEN WORLD</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <div class="card-text">
+            <strong>Ghost of Tsushima</strong>
+            <span class="card-sub">Sucker Punch</span>
+          </div>
+          <button class="price-btn">R$ 249</button>
+        </div>
+      </div>
+
+      <div class="haircut-card" data-aos="fade-up" data-aos-delay="300">
+        <div class="card-image">
+          <img src="assets/needSpeed.jpg" alt="Need for Speed" />
+          <div class="card-overlay">
+            <span class="card-genre">CORRIDA EXTREMA</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <div class="card-text">
+            <strong>Need for Speed</strong>
+            <span class="card-sub">EA Games</span>
+          </div>
+          <button class="price-btn">R$ 319</button>
+        </div>
+      </div>
+
+      <div class="haircut-card" data-aos="fade-up" data-aos-delay="150">
+        <div class="card-image">
+          <img src="assets/batman.jpg" alt="Batman Arkham Knight" />
+          <div class="card-overlay">
+            <span class="card-genre">SUPER-HERÓI</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <div class="card-text">
+            <strong>Batman Arkham Knight</strong>
+            <span class="card-sub">Rocksteady</span>
+          </div>
+          <button class="price-btn">R$ 259</button>
+        </div>
+      </div>
+
+      <div class="haircut-card featured" data-aos="fade-up" data-aos-delay="250">
+        <div class="featured-badge">🔥 DESTAQUE</div>
+        <div class="card-image">
+          <img src="assets/resident2.jpg" alt="Resident Evil" />
+          <div class="card-overlay">
+            <span class="card-genre">SURVIVAL HORROR</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <div class="card-text">
+            <strong>Resident Evil</strong>
+            <span class="card-sub">Capcom</span>
+          </div>
+          <button class="price-btn gold">R$ 479</button>
+        </div>
+      </div>
+
+      <div class="haircut-card" data-aos="fade-up" data-aos-delay="350">
+        <div class="card-image">
+          <img src="assets/diablo.jpg" alt="Diablo" />
+          <div class="card-overlay">
+            <span class="card-genre">HACK & SLASH RPG</span>
+          </div>
+        </div>
+        <div class="card-info">
+          <div class="card-text">
+            <strong>Diablo IV</strong>
+            <span class="card-sub">Blizzard</span>
+          </div>
+          <button class="price-btn">R$ 379</button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- MAPA -->
+  <section class="map-section">
+    <div class="map-title container" data-aos="fade-up">
+      <div class="section-tag">LOCALIZAÇÃO</div>
+      <h2>Venha <span class="text-gradient">Conhecer</span></h2>
+    </div>
+    <div class="map-wrapper" data-aos="fade-up" data-aos-delay="200">
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d15357.265747443144!2d-47.91299!3d-15.794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1spt-BR!2sbr!4v1715000000000"
+        width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy">
+      </iframe>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
   <footer class="footer">
-    <div class="footer-icons">
-      <a href="#"><i class="fa-brands fa-instagram fa-2x"></i></a>
-      <a href="#"><i class="fa-brands fa-facebook fa-2x"></i></a>
-      <a href="#"><i class="fa-brands fa-tiktok fa-2x"></i></a>
+    <div class="footer-top container">
+      <div class="footer-logo">
+        <img src="assets/logoFundo.png" alt="Logo Valours" />
+        <p>A elite dos games. Seu legado começa aqui.</p>
+      </div>
+      <div class="footer-links">
+        <h4>Navegação</h4>
+        <a href="#">Início</a>
+        <a href="terror .html">Terror Zone</a>
+        <a href="corrida.html">Corrida</a>
+        <a href="luta.html">Fight Crazy</a>
+      </div>
+      <div class="footer-social">
+        <h4>Redes Sociais</h4>
+        <div class="footer-icons">
+          <a href="#"><i class="fa-brands fa-instagram fa-lg"></i></a>
+          <a href="#"><i class="fa-brands fa-facebook fa-lg"></i></a>
+          <a href="#"><i class="fa-brands fa-tiktok fa-lg"></i></a>
+        </div>
+      </div>
     </div>
-    <div class="footer-logo">
-       <img src="assets/logoFundo.png" alt="Logo Valours" style="width: 120px;" />
+    <div class="footer-bottom">
+      <p>Copyright 2026 | <strong>Valours Gamers</strong> — Todos os direitos reservados.</p>
     </div>
-    <p>Copyright 2026 | Valours Gamers - Todos direitos reservados.</p>
   </footer>
 
-  <a href="https://api.whatsapp.com/send?phone=5561999639758" class="btn-whatsapp" target="_blank" data-aos="zoom-in">
-    <img src="assets/whatssapp.svg" alt="Botão whatsapp" />
+  <!-- WHATSAPP -->
+  <a href="https://api.whatsapp.com/send?phone=5561999639758" class="btn-whatsapp" target="_blank">
+    <img src="assets/whatssapp.svg" alt="Whatsapp" />
   </a>
 
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>AOS.init({ duration: 1000, once: true });</script>
+  <script>
+    AOS.init({ duration: 900, once: true, easing: 'ease-out-cubic' });
+
+    // CURSOR CUSTOMIZADO
+    const cursor = document.querySelector('.cursor');
+    const follower = document.querySelector('.cursor-follower');
+    document.addEventListener('mousemove', e => {
+      cursor.style.left = e.clientX + 'px';
+      cursor.style.top = e.clientY + 'px';
+      setTimeout(() => {
+        follower.style.left = e.clientX + 'px';
+        follower.style.top = e.clientY + 'px';
+      }, 80);
+    });
+    document.querySelectorAll('a, button').forEach(el => {
+      el.addEventListener('mouseenter', () => cursor.classList.add('hover'));
+      el.addEventListener('mouseleave', () => cursor.classList.remove('hover'));
+    });
+
+    // PARTÍCULAS CANVAS
+    const canvas = document.getElementById('particles-canvas');
+    const ctx = canvas.getContext('2d');
+    canvas.width = window.innerWidth;
+    canvas.height = window.innerHeight;
+
+    const particles = Array.from({ length: 60 }, () => ({
+      x: Math.random() * canvas.width,
+      y: Math.random() * canvas.height,
+      r: Math.random() * 1.5 + 0.3,
+      dx: (Math.random() - 0.5) * 0.4,
+      dy: (Math.random() - 0.5) * 0.4,
+      alpha: Math.random() * 0.5 + 0.1
+    }));
+
+    function drawParticles() {
+      ctx.clearRect(0, 0, canvas.width, canvas.height);
+      particles.forEach(p => {
+        ctx.beginPath();
+        ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
+        ctx.fillStyle = `rgba(127, 119, 221, ${p.alpha})`;
+        ctx.fill();
+        p.x += p.dx; p.y += p.dy;
+        if (p.x < 0 || p.x > canvas.width) p.dx *= -1;
+        if (p.y < 0 || p.y > canvas.height) p.dy *= -1;
+      });
+      requestAnimationFrame(drawParticles);
+    }
+    drawParticles();
+
+    window.addEventListener('resize', () => {
+      canvas.width = window.innerWidth;
+      canvas.height = window.innerHeight;
+    });
+
+    // CONTADOR ANIMADO
+    const stats = document.querySelectorAll('.stat-num');
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.style.opacity = '1';
+          entry.target.style.transform = 'translateY(0)';
+        }
+      });
+    });
+    stats.forEach(s => observer.observe(s));
+  </script>
 </body>
 </html>
